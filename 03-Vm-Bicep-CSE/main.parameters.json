@@ -1,0 +1,28 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "environmentName": {
+        "value": "dev"
+      },
+      "vmSize": {
+        "value": "Standard_B2s"
+      },
+      "windowsOSVersion": {
+        "value": "2019-Datacenter"
+      },
+      "ext_disk_name": {
+        "value": "ext-data-disk"
+      },
+      "fileUris": {
+        "value": "https://raw.githubusercontent.com/Render-Rini/SimpleVMs/main/Scripts/CSE-ChocoInstall.ps1"
+      },
+      "resourceTags": {
+        "value": {
+            "Snapshot": "True",
+            "Environment": "Dev",
+            "BillingCode": "1178"
+        }
+      }
+    }
+  }
